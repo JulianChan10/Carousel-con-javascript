@@ -1,0 +1,54 @@
+/* contenedor carrousel */
+#carousel {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* contenido carrrousel */
+#slide-container {
+  scroll-snap-type: x mandatory;
+  overflow-x: visible; 
+  overflow-y: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+  color: #000;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  border: none; 
+}
+
+.slide {
+  padding: 0; 
+  scroll-snap-align: center;
+  position: relative;
+  min-width: calc(33.333% - 14px); /* Mostrar 3 slides a la vez */
+  text-align: center;
+}
+
+/* contenedor botones */
+.slide-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* contenedor indicadores */
+.slide-indicators {
+  display: none; 
+}
+
+/* flechas */
+.arrow {
+  border: 1px black solid;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+}
+

@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+html{
+  scroll-behavior: smooth;
+}
+.ancho{
+  max-width:1200px;
+  margin:auto;
+  /* border:1px red solid; */
+}
+.margen{
+  padding: 15px;
+}
+
+/* Sección del equipo */
+.contenedor-principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row; 
+  gap: 30px;
+}
+
+/* Información del equipo */
+.team-info {
+  flex: 1;
+  max-width: 30%;
+}
+
+.team-info h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: px;
+  color: #000;
+}
+
+.team-info h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1e40af; 
+  margin-bottom: 16px;
+}
+
+.team-info p {
+  color: #666;
+  font-size: 20px;
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+
+/* Botones de navegación */
+.slide-buttons {
+  position: relative;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.boton-izquierda, .boton-derecha {
+  /* position: absolute; */
+  width: 65px;
+  height: 60px;
+  background-color: #fde047; 
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  color: #000;
+  border: 3px black solid;
+}
+
+.boton-izquierda:hover, .boton-derecha:hover {
+  background-color: #facc15; 
+}
+
+.boton-izquierda i, .boton-derecha i {
+  font-size: 18px;
+}
+
+/* Contenedor del carrusel */
+.contenedor-carousel {
+  flex: 2;
+  width: 70%;
+  overflow: visible;
+}
+
+.contenedor-articles {
+  display: flex;
+  overflow-x: visible; 
+  gap: 20px;
+  border: none; 
+}
+
+/* Slides */
+.slide {
+  min-width: calc(33.333% - 14px); 
+  flex-shrink: 0;
+  text-align: center;
+  padding: 0; 
+  border: none; 
+}
+
+.contenedor-img {
+  background-color: #f3f4f6;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.slide img {
+  width: 100%;
+  height: 220px; 
+  object-fit: cover;
+  display: block;
+}
+
+.slide h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.slide p {
+  color: #666;
+  font-size: 18px;
+  margin: 0;
+}
+
+.slide-indicators {
+  display: none; 
+}
+

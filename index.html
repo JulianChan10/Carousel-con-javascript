@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>OUR TEAM Carousel</title>
+<link rel="stylesheet" href="css/estilos.css" />
+<link rel="stylesheet" href="css/carrousel.css" />
+<link rel="stylesheet" href="css/movil.css">
+<script src="https://kit.fontawesome.com/fe8b02346c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="contenedor-principal ancho" id="carousel">
+    <div class="contenedor">
+        <div class="team-info">
+            <h1>OUR TEAM</h1>
+            <br>
+            <h2>PROFESSIONAL PC REPAIR TEAM</h2>
+    
+            <p>Since our establishment, we have gathered a team of dedicated PC repair professionals.</p>
+
+            <div class="slide-buttons ancho margen">
+                <a href="#" id="back-button" class="boton-izquierda"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#" id="forward-button" class="boton-derecha"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        
+        <div class="contenedor-carousel">
+            <div class="contenedor-articles" id="slide-container">
+                <article class="margen slide" data-slideindex="0">
+                    <div class="contenedor-img">
+                        <img src="imagenes/foto1.jpg" alt="John Tuff">
+                    </div>
+                    <h3>John Tuff</h3>
+                    <p>Field Technician</p>
+                </article>
+            
+                <article class="margen slide" data-slideindex="1">
+                    <div class="contenedor-img">
+                        <img src="imagenes/foto2.jpg" alt="Frank McMillan">
+                    </div>
+                    <h3>Frank McMillan</h3>
+                    <p>General Manager</p>
+                </article>
+            
+                <article class="margen slide" data-slideindex="2">
+                    <div class="contenedor-img">
+                        <img src="imagenes/foto3.jpg" alt="John Smith">
+                    </div>
+                    <h3>John Smith</h3>
+                    <p>Field Technician</p>
+                </article>
+            
+                <article class="margen slide" data-slideindex="3">
+                    <div class="contenedor-img">
+                        <img src="imagenes/foto4.jpg" alt="Frank Muños">
+                    </div>
+                    <h3>Frank Muños</h3>
+                    <p>Field Technician</p>
+                </article>
+            
+                <article class="margen slide" data-slideindex="4">
+                    <div class="contenedor-img">
+                        <img src="imagenes/foto5.jpg" alt="John Krasinski">
+                    </div>
+                    <h3>John Krasinski</h3>
+                    <p>Management Technician</p>
+                </article>
+            </div>
+        </div>
+
+        
+    </div>
+        
+        <div class="slide-indicators">
+        <div class="slide-indicator active"></div>
+        <div class="slide-indicator"></div>
+        <div class="slide-indicator"></div>
+        <div class="slide-indicator"></div>
+        <div class="slide-indicator"></div>
+        </div>
+</section>
+
+<script src="js/carrousel.js"></script>
+</body>
+</html>

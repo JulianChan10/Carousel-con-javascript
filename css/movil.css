@@ -1,0 +1,170 @@
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .team-info {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .team-info p {
+    margin: 0 auto 20px;
+  }
+  
+  .contenedor-carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+
+   .contenedor-articles {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  .contenedor-img {
+  position: relative;
+  width: 100%;
+  padding-top: 80%; /* Esto crea un cuadrado perfecto */
+  overflow: hidden;
+}
+
+.slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+  .slide {
+    min-width: 100%; 
+    scroll-snap-align: center;
+  }
+  
+  .slide-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .slide-indicator {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px;
+    width: 50px;
+  }
+  .slide-indicator:after {
+    content: "";
+    border: 1px black solid;
+    height: 10px;
+    width: 50px;
+  }
+
+  .slide-indicator.active:after,
+  .slide-indicator:hover:after {
+    background-color: #1e40af; 
+  }
+
+  .slide-buttons {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+  .contenedor {
+    flex-direction: row; 
+    gap: 40px; 
+    margin-left: 40px;
+  }
+  
+  /* Ajustes de información del equipo */
+  .team-info {
+    max-width: 40%; 
+  }
+  
+  .team-info h1 {
+    font-size: 34px; 
+  }
+  
+  .team-info h2 {
+    font-size: 20px; 
+  }
+  
+  .team-info p {
+    font-size: 18px; 
+    margin-bottom: 18px; 
+  }
+  
+  /* Ajustes de carrusel */
+  .contenedor-carousel {
+    width: 50%; /* Ajustar ancho */
+  }
+  
+  /* Mostrar 2 slides a la vez en tablets */
+  .slide {
+    min-width: calc(50% - 5px); /* 2 slides con espacio entre ellos */
+    scroll-snap-align: center;
+  }
+  
+  .slide img {
+    height: 180px; 
+  }
+  
+  .slide h3 {
+    font-size: 20px; 
+  }
+  
+  .slide p {
+    font-size: 16px; 
+  }
+  
+  .boton-izquierda, .boton-derecha {
+    width: 55px;
+    height: 50px;
+  }
+  
+  .slide-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-left: 30%;
+    margin-top: -15px;
+  }
+  
+  .slide-indicator {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 4px;
+    width: 40px; 
+  }
+  
+  .slide-indicator:after {
+    content: "";
+    border: 1px black solid;
+    height: 8px;
+    width: 40px;
+  }
+  
+  .slide-indicator.active:after,
+  .slide-indicator:hover:after {
+    background-color: #1e40af;
+  }
+}
