@@ -45,8 +45,8 @@
 }
   
   .slide {
-    min-width: 100%; 
-    scroll-snap-align: center;
+    min-width: 50%;
+    scroll-snap-align: start;
   }
   
   .slide-indicators {
